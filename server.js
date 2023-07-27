@@ -58,7 +58,7 @@ app.delete('/api/v1/:location', (req, res) => {
       message: ''
     }
   }
-  res.status(200)
+  res.status(200).json({})
 })
 
 app.listen(port, () => {
