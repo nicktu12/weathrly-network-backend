@@ -41,7 +41,9 @@ app.post('/api/v1/:location',(req, res) => {
       message: req.body.message
     }
   }
-  res.status(201)
+  console.log(app.locals)
+
+  return res.status(201).json({ message: req.body.message })
 })
 
 app.delete('/api/v1/:location', (req, res) => {
